@@ -1,4 +1,3 @@
-"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -6,75 +5,8 @@ import { useEffect } from "react";
 import { CiLinkedin } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
 
-const Hero = () => {
-  useEffect(() => {
-    const navLinks: any = document.querySelectorAll("nav ul li a");
-    const navLink: any = document.querySelector("nav ul li a");
-    const sections: any = document.querySelectorAll(".section");
-
-    /*   console.log(`sections: ${sections[0].classList}`);
-    console.log(`navLinks: ${navLinks[0]}`);
-    console.log(`navLink: ${navLink.classList}`); */
-
-    window.onscroll = (e) => {
-      sections.forEach((sec: any) => {
-        let top = window.scrollY + 150;
-        let offset = sec.offsetTop;
-        let height = sec.offsetHeight;
-
-        /*        console.log(`this is offset ${offset}`);
-        console.log(`this is height ${height}`); */
-        if (top >= offset && top < offset + height / 2) {
-          let currentId: any = sec.id;
-          let currentIDS =
-            (navLink.href = `http://localhost:3000/#${currentId}`);
-          /*           console.log((navLink.href = `http://localhost:3000/#${currentId}`));
-           */
-          navLinks.forEach((Link: any) => {
-            if (Link.href === currentIDS) {
-              document.querySelector(".active")?.classList.remove("active");
-
-              Link.classList.add("active");
-            }
-
-            /*   console.log(Link) */
-
-            /* document.querySelector(".active")?.classList.remove("active");
-            navLink.classList.add("active"); */
-          });
-        }
-      });
-
-      /*   console.log(`this is top ${top}`); */
-      /*  console.log(`this is current ${currentId}`); */
-    };
-  });
-
-  useEffect(() => {
-    const cont = document.querySelector("#contact");
-    /*  console.log(cont); */
-    const obz: any = new IntersectionObserver(
-      (cont) => {
-        /*  console.log(cont[0].target);
-       console.log(cont[0].isIntersecting); */
-
-        const contar = cont[0].target;
-        const intersect = cont[0].isIntersecting;
-
-        if (intersect) {
-          document.querySelector(".active")?.classList.remove("active");
-
-          document.querySelector("#contactLink")?.classList.add("active");
-        }
-      },
-      {
-        threshold: 1,
-      },
-    );
-
-    obz.observe(cont);
-  }, []);
-
+const Hero = async () => {
+  await new Promise((resolve) => setTimeout(resolve, 200));
   return (
     <div className="items-center text-center  justify-center flex flex-col-reverse md:min-w-[500px] lg:flex-row  lg:text-start md:gap-x-20 max-lg:gap-y-20 max-sm:gap-y-10  ">
       <div className="space-y-5  md:flex-1">
