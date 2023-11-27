@@ -1,15 +1,13 @@
-'use client'
+"use client";
 import { Progress } from "@/components/ui/progress";
 import React, { Suspense } from "react";
 
 export default function Loading() {
-
-
   // You can add any UI inside Loading, including a Skeleton.
   const [progress, setProgress] = React.useState(15);
 
   React.useEffect(() => {
-    const timer = setTimeout(() => setProgress(90), 100);
+    const timer = setTimeout(() => setProgress(90), 200);
     return () => clearTimeout(timer);
   }, []);
 

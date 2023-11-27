@@ -23,7 +23,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="!scroll-smooth scroll-p-24  ">
+    <html
+      lang="en"
+      className="!scroll-smooth max-md:scroll-p-10 scroll-p-24  "
+    >
       {/*   <head>
         <Link rel="preconnect" href="https://fonts.googleapis.com" />
         <Link rel="preconnect" href="https://fonts.gstatic.com" />

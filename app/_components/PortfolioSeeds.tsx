@@ -17,7 +17,7 @@ const PortfolioSeeds = () => {
       </div>
 
       <div className="flex flex-col justify-between md:w-[40%] md:px-5 space-y-10 ">
-        <div className="max-md:text-center space-y-5 max-md:px-20">
+        <div className="max-md:text-center space-y-5 max-sm:px-0 max-sm:text-start max-md:px-20">
           <h1 className="text-2xl ">
             <span className="font-bold">CAR RENTAL </span>
             <span className="font-bold text-xl ">(FEBRUARY 2023) 🚗</span>

@@ -1,3 +1,4 @@
+"use client";
 import { ModeToggle } from "@/components/dark-mode";
 import {
   Sheet,
@@ -12,11 +13,14 @@ import { MenuIcon } from "lucide-react";
 import Menu from "./Menu";
 import { Button, buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
+import { useEffect } from "react";
 
 const Navbar = () => {
+  
+
   return (
     <div className="flex justify-between items-center py-8 px-12 ">
-      <Link href="" className='' >
+      <Link href="" className="">
         <h2 className={`text-2xl font-bold `}>Mr.AbidAkash</h2>
       </Link>
       <div className="flex md:items-center space-x-5">
@@ -26,7 +30,7 @@ const Navbar = () => {
         {/*   <div>
           <ModeToggle />
         </div> */}
-        <div className="md:hidden">
+        <div className="md:hidden ">
           <Sheet>
             <SheetTrigger>
               <MenuIcon
@@ -35,14 +39,14 @@ const Navbar = () => {
               />
             </SheetTrigger>
             <SheetContent
+              id="sheetSec "
               side={"left"}
-              className="w-full py-16 px-14 md:hidden "
+              className="w-full py-16 px-14 md:hidden"
             >
               <SheetHeader className=" items-center justify-center mt-14 md:hidden ">
-                <SheetClose asChild >
-                   <Menu />
+                <SheetClose asChild>
+                  <Menu />
                 </SheetClose>
-               
               </SheetHeader>
             </SheetContent>
           </Sheet>

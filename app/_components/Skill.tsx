@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Skill = () => {
   return (
-    <div className="max-md:space-y-10 md:flex items-center md:space-x-10">
-      <h2 className="inline-block text-xl font-semibold max-md:border-b-[3px] md:border-r-[3px] max-md:pb-2 md:pr-5   border-[rgba(45,46,50,.5)]   ">
+    <div className="max-md:space-y-10 flex max-md:flex-col  items-center md:space-x-10">
+      <h2 className="inline-block text-xl font-semibold max-md:border-b-[3px] md:border-r-[3px] max-md:pb-2 md:pr-5   border-[rgba(45,46,50,.5)]    ">
         Tech Stack
       </h2>
       <div className="skillIcon">
