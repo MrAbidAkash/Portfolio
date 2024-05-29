@@ -50,7 +50,7 @@ const Hero = async () => {
       <div className=" w-[350px] h-[350px] max-sm:w-[280px] max-sm:h-[280px] overflow-hidden bg-center bg- object-cover rounded-full ani relative transition-[all_ease-in-out] duration-1000 FloatingAnimation  ">
         <Image
           alt="profilePic"
-          src="/goku.jpg"
+          src="/MrAbidAkash.jpg"
           fill
           sizes="w-full"
           className="object-cover object-top"
