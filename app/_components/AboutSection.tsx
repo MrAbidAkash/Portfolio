@@ -40,7 +40,7 @@ const AboutSection = () => {
           A dedicated Full-Stack Web Developer based in Dhaka, Bangladesh 📍
         </h2>
         <p className="text-md  text-justify text-[#767676]">
-          Greetings! I am a skilled and dynamic Full-Stack Web Developer specializing in frontend frameworks like Next.js and React.js, and backend technologies such as Node.js and Express.js. I excel in using TypeScript for scalable code and Tailwind CSS for appealing designs. I build dynamic, responsive web apps and develop RESTful APIs for seamless frontend-backend communication. My expertise includes Prisma and Drizzle for efficient database management across MySQL, MongoDB, and Postgres. Additionally, I am proficient in cloud platforms like AWS, GCP, and DigitalOcean, and adept in microservices architecture using Docker and Kubernetes for containerization and orchestration.
+Greetings! I am a dynamic Full-Stack Web Developer skilled in Next.js, React.js, Node.js, and Express.js. I excel in TypeScript, Tailwind CSS, and building RESTful APIs. My expertise includes Prisma and Drizzle ORM tools, managing databases like MySQL, MongoDB, and Postgres. I am experienced in deploying applications on AWS, GCP, and DigitalOcean, and proficient in Docker and Kubernetes for microservices architecture.
         </p>
       </div>
     </div>
