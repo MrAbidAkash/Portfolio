@@ -16,10 +16,8 @@ import Link from "next/link";
 import { useEffect } from "react";
 
 const Navbar = () => {
-  
-
   return (
-    <div className="flex justify-between items-center py-8 px-12 ">
+    <div className="flex justify-between items-center py-8 px-12 max-w-[1020px] mx-auto">
       <Link href="" className="">
         <h2 className={`text-2xl font-bold `}>Mr.AbidAkash</h2>
       </Link>
@@ -39,8 +37,8 @@ const Navbar = () => {
               />
             </SheetTrigger>
             <SheetContent
-              id="sheetSec "
-              side={"left"}
+              id="sheetSec"
+              side="left"
               className="w-full py-16 px-14 md:hidden"
             >
               <SheetHeader className=" items-center justify-center mt-14 md:hidden ">

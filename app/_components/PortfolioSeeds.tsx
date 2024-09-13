@@ -10,7 +10,7 @@ const PortfolioSeeds = () => {
         <Image
           alt=""
           src="https://www.stefantopalovic.com/static/media/car-rental-full.c58b37da333d73238fdd.webp"
-          width={5000}
+          width={500}
           height={5000}
           className=" scrollPic "
         />

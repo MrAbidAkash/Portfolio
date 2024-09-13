@@ -81,8 +81,11 @@ export default function Home() {
 
 
   return (
-    <main className="[&>*:nth-child(odd)]:bg-[#f9f9f9] [&>*:nth-child(n)]:py-20 space-y-10 ">
-      <section id="home" className=" section lg:h-[100dvh] lg:flex  ">
+    <main className="[&>*:nth-child(odd)]:bg-[#f9f9f9] [&>*:nth-child(n)]:py-20 space-y-10 overflow-hidden">
+      <section
+        id="home"
+        className=" section lg:h-[100dvh] lg:flex"
+      >
         <header className=" max-lg:items-center max-w-[1020px] mx-auto max-xl:px-10  flex  flex-col max-lg:space-y-14  lg:justify-evenly ">
           <Hero />
           <Skill />
@@ -94,7 +97,7 @@ export default function Home() {
         </div>
       </section>
       <section id="projects" className="section">
-        <div className="max-w-[1020px] mx-auto max-xl:px-10">
+        <div className="max-w-[1020px] mx-auto max-xl:px-10 ">
           <Projects />
         </div>
       </section>

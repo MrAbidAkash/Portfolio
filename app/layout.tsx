@@ -37,7 +37,7 @@ export default function RootLayout({
       </head> */}
       <body className={poppins.className}>
         <div className="shadow-md shadow-slate-200 sticky top-0 bg-white z-50">
-          <Navbar />
+          <Navbar  />
         </div>
         {children}
         <div className="text-white bg-slate-800 font-semibold">
