@@ -32,7 +32,7 @@ const Menu = () => {
     <nav className="">
       <ul className="text-4xl font-semibold flex flex-col space-y-14 items-center md:flex-row md:text-xl md:space-y-0 md:space-x-5 ">
         <li>
-          <a /* onClick={closeMenu} */ className={`navLink active`} href="/">
+          <a /* onClick={closeMenu} */ className={`navLink active`} href="/#home">
             Home
           </a>
         </li>
