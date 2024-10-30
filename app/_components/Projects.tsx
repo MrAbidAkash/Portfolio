@@ -8,23 +8,30 @@ const projectDetails = [
     liveUr: "https://ghotion.vercel.app/",
     githubUrl: "https://github.com/MrAbidAkash/ghotion",
     title: "NOTE-BOOK",
-    description: "Ghotion is your ultimate workspace for productivity and collaboration. Whether you're planning, writing, or brainstorming, Ghotion streamlines your workflow with the power of AI, making work feel smoother and faster. Say goodbye to scattered tools—welcome to Ghotion, where every project is organized, efficient, and just a little smarter.",
+    description:
+      "Ghotion is your ultimate workspace for productivity and collaboration. Whether you're planning, writing, or brainstorming, Ghotion streamlines your workflow with the power of AI, making work feel smoother and faster. Say goodbye to scattered tools—welcome to Ghotion, where every project is organized, efficient, and just a little smarter.",
     date: "February 2024",
+    imgHeight: "h-[600px] ",
+    techStack: ["Next.JS", "Tailwind CSS", "MongoDB", "TypeScript","Prisma ORM"],
   },
-  // {
-  //   imgUrl: "/goku.jpg",
-  //   liveUr: "https://goku-web.vercel.app/",
-  //   githubUrl: "https://github.com/ghotion3/goku",
-  //   title: "Goku",
-  //   description: "Goku is a car rental website that allows users to rent cars for personal or business use. It provides an interface for searching, comparing, and reserving cars.",
-  //   date: "February 2023",
-  // },
+  {
+    imgUrl: "/projects-img/pratice-frontend-01.png",
+    liveUr: "https://pratice-frontend-01.vercel.app/",
+    githubUrl: "https://github.com/MrAbidAkash/pratice-frontend-01",
+    title: "The WPPOOL Index",
+    description:
+      "The WPPOOL Index tracks the performance of emerging, publicly traded financial technology (fintech) companies. It offers investors insights into market trends and key performance metrics, helping them make informed decisions in the evolving fintech landscape.",
+    date: "April 2024",
+    imgHeight: "h-[2300px]  ",
+    techStack: ["HTML", "CSS", "Tailwind CSS ", "Chart.JS"],
+  },
   // {
   //   imgUrl: "/projects-img/ghotion-thumbnail.png",
   //   liveUr: "https://ghotion.vercel.app/",
   //   githubUrl: "https://github.com/MrAbidAkash/ghotion",
   //   title: "Ghotion",
-  //   description: "Ghotion is a social media platform that allows users to create and share posts, photos, and videos. It also has a messaging feature.",
+  //   description:
+  //     "Ghotion is a social media platform that allows users to create and share posts, photos, and videos. It also has a messaging feature.",
   //   date: "string",
   // },
 ];
@@ -49,6 +56,8 @@ const Projects = () => {
             title={data.title}
             description={data.description}
             date={data.date}
+            imgHeight={data.imgHeight}
+            techStack={data.techStack}
           />
         ))}
       </div>

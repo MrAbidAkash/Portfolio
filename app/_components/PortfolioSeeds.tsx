@@ -10,6 +10,8 @@ interface Props {
   title: string;
   description: string;
   date: string;
+  imgHeight: string;
+  techStack: Array<string>;
 }
 
 const PortfolioSeeds = ({
@@ -19,12 +21,14 @@ const PortfolioSeeds = ({
   title,
   description,
   date,
+  imgHeight,
+  techStack,
 }: Props) => {
   return (
     <div className="relative lg:min-w-[570px] lg:h-[500px] overflow-idden bg-white pt-5 lg:p-5 rounded-3xl max-lg:space-y-10 lg:space-x-5 shadow-slate-400  shadow-lg lg:flex lg:flex-row p-5 lg:items-center lg:justify-between ">
       <div className="w-full lg:flex-grow max-sm:h-[340px] max-lg:h-[420px] min-h-[250px] h-[90%]   lg:w-[50%] overflow-hidden overflow-y-scroll scroll-smooth scrollhide  shadow-lg  rounded-3xl ">
-        <div className="relative h-[800px] w-full scrollPic ">
-          <Image alt="" src={imgUrl} fill className=" " />
+        <div className={`relative ${imgHeight} w-full scrollPic `}>
+          <Image alt="" src={imgUrl} fill className="object-contain" />
         </div>
       </div>
 
@@ -40,13 +44,19 @@ const PortfolioSeeds = ({
             </h2>
           </div>
           <div className="flex flex-wrap font-semibold gap-2">
-            <span className="py-3 px-3 shadow-md rounded-xl ">React</span>
+            {techStack.map((tech) => (
+              <span className="py-3 px-3 shadow-md rounded-xl" key={tech}>
+                {tech}
+              </span>
+            ))}
+
+            {/* <span className="py-3 px-3 shadow-md rounded-xl ">React</span>
             <span className="py-3 px-3 shadow-md rounded-xl ">Next JS</span>
             <span className="py-3 px-3 shadow-md rounded-xl ">
               Tailwind CSS
             </span>
             <span className="py-3 px-3 shadow-md rounded-xl ">MongoDB</span>
-            <span className="py-3 px-3 shadow-md rounded-xl ">TypeScript</span>
+            <span className="py-3 px-3 shadow-md rounded-xl ">TypeScript</span> */}
           </div>
         </div>
         <div className="lg:absolute bottom-2 font-medium text-xl flex flex-wrap items-center justify-center mx-auto gap-x-10 ">

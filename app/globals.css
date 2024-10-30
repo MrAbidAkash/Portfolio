@@ -132,11 +132,11 @@ a:hover {
 
 .scrollPic {
   transform: translateY(0%);
-  transition: transform 5s ease-in-out 0s;
+  transition: transform 6s ease-in-out 0s;
 }
 .scrollPic:hover {
-  transform: translateY(-60%);
-  transition: transform 5s ease-in-out 0s;
+  transform: translateY(-80%);
+  transition: transform 6s ease-in-out 0s;
 }
 .active{
   color: #147efb ;
